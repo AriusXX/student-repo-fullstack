@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Welcome to Countries
+  p Explore the countries of the world using data from the REST Countries API.
+  ul
+    li
+      a(href='/countries') Countries
+      |  - every country with its capital and leader
+    li
+      a(href='/populous') Populous
+      |  - countries with 50 million people or more
+    li
+      a(href='/regions') Regions
+      |  - the countries in each region of the world

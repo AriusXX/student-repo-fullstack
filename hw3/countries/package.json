@@ -1,0 +1,17 @@
+{
+  "name": "countries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^4.22.3",
+    "pug": "^3.0.4"
+  }
+}

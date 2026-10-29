@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Most Populous Countries
+  p #{cards.length} countries with at least 50,000,000 people
+  .cards
+    each card in cards
+      .card
+        if card.flag
+          img(src=card.flag, alt='Flag of ' + card.name)
+        else
+          p No flag available
+        h2= card.name
+        p #{card.population} people

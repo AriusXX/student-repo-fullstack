@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Countries by Region
+  each region in regionList
+    h2 #{region.name} (#{region.count})
+    ul
+      each name in region.countries
+        li= name
