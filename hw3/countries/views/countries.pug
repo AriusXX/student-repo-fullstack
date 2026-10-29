@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 All Countries
+  p #{rows.length} countries, in alphabetical order
+  table
+    tr
+      th Country
+      th Capital
+      th Leader
+    each row in rows
+      tr
+        td= row.name
+        td= row.capital
+        td= row.leader
